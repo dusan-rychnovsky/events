@@ -1,0 +1,16 @@
+syntax = "proto2";
+option java_package = "cz.dusanrychnovsky.events";
+option java_outer_classname = "EventProto";
+
+enum EventType {
+	OrderCreated = 1;
+	OrderSubmitted = 2;
+	OrderApproved = 3;
+	OrderProcessed = 4;
+}
+
+message Event {
+  required string id = 1;
+  required EventType type = 2;
+  required string targetId = 3;
+}
