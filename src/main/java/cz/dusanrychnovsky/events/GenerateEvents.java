@@ -11,7 +11,7 @@ import java.util.Random;
 public class GenerateEvents {
 
   private static final int NUM_BATCHES = 1000;
-  private static final int NUM_PER_BATCH = 10000;
+  private static final int NUM_PER_BATCH = 100000;
   private static final int NUM_TARGETS = 10000;
   private static EventType[] EVENT_TYPES = EventType.values();
   private static final File OUTPUT_DIR = new File("C:\\Users\\durychno\\devel\\events\\target\\data");
